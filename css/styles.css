@@ -15,6 +15,7 @@
     --logo-color: #2E2F42;
     --btn-bacground-color: #F4F4FD;
     --footer-text-color: #E7E9FC;
+    --border-color: #8E8F99;
 }
 
 body {
@@ -138,6 +139,15 @@ text-align: center;
 padding-top: 188px;
 padding-bottom: 188px;
 background-color: var(--title-text-color);
+height: 600px;
+background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+ url(../images/icons/people-office\ 1.jpg);
+max-width: 1440px ;
+margin-left: auto;
+margin-right: auto;
+/* background-repeat: no-repeat;
+background-position: center;
+background-size: cover; */
 }
 .hero-title {
     width: 494px;
@@ -205,6 +215,15 @@ line-height: 1.2;
     margin-left: 24px;
 }
 
+.features-icons {
+    width: 264px;
+    height: 112px;
+    background-color: var(--btn-bacground-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* what doing */
 .what-list{
     display: flex;
@@ -228,12 +247,42 @@ line-height: 1.2;
 }
 .card-content{
     text-align: center;
-    padding: 32px 16px;
+    padding: 32px 16px 0px 16px;
 }
 .team-position{
     color: var(--primery-text-color);
 }
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 16px 32px 16px;
+}
+.social-link{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-color);
+    border-radius: 50%;
+    border: none;
+}
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--active-color);
+}
+.social-link .link{
+    display: block;
+}
 
+/* clients */
+.container.clients .list{
+    display:flex ;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--border-color) ;
+    border-radius: 4px;
+}
 /* footer */
 footer {
     padding-top: 100px;
