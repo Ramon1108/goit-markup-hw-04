@@ -375,7 +375,6 @@ color: var(--btn-bacground-color);
     cursor: pointer;
     height: 48px;
     border: 1px solid var(--footer-text-color);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     border-radius: 4px;
     padding: 12px 24px;
 }
@@ -384,7 +383,8 @@ color: var(--btn-bacground-color);
 .btn-portfolio:hover {
     background-color: var(--active-color);
     color: var(--primery-bg-color);
-    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: var(--active-color);
 }
 
 .section.portfolio {
